@@ -1,0 +1,15 @@
+LoadModule security2_module modules/mod_security2.so
+
+SecRuleEngine DetectionOnly
+
+<IfModule security2_module>
+
+SecRuleEngine On
+
+SecDefaultAction "phase:2,deny,log,status:403"
+
+Include conf/sqlinjection.conf
+
+Include conf/xss.conf
+
+</IfModule>
