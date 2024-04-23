@@ -1,6 +1,5 @@
 <?php
-/* Developed by Juno_okyo */
-setcookie('canyouseeme', 'I am Juno_okyo'); // secret cookie for demo
+setcookie('canyouseeme', 'I am Juno_okyo'); 
 
 if (isset($_POST['name']) && ! empty($_POST['name'])) {
   $name = $_POST['name'];
